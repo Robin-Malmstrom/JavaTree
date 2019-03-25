@@ -7,11 +7,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//Uppgift Tree, ett program som visar en filstruktur
 public class Tree {
 
 	public static ArrayList<Boolean> depthMap = new ArrayList<Boolean>();
 	public static int max_depth;
 
+	//Skriver ut ett träd för given fil
 	public static void printTree(String dirName, int depth) {
 		if (depthMap.size() == depth) {
 			depthMap.add(true);
@@ -52,6 +54,7 @@ public class Tree {
 		});
 	}
 	
+	//Skriver ut hjälp
 	public static void printHelp() {
 		System.out.println(
 			"Tree [PATHNAME] -depth=x\n" +
