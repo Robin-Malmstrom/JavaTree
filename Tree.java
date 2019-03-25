@@ -10,7 +10,10 @@ import java.util.Arrays;
 //Uppgift Tree, ett program som visar en filstruktur
 public class Tree {
 
+	//Element n är false om nivå n i trädet är avslutad (inga fler vertikala linjer ska skrivas ut)
 	public static ArrayList<Boolean> depthMap = new ArrayList<Boolean>();
+	
+	//max antal nivåer till trädet
 	public static int max_depth;
 
 	//Skriver ut ett träd för given fil
